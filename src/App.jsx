@@ -1,6 +1,6 @@
 import React from "react";
 import Profile from "./Profile";
-import FriendList from "./FriendList/FriendList"; // klasörden çekiyoruz
+import FriendList from "./friendList/FriendList"; 
 import userData from "./userData.json";
 import friends from "./friends.json";
 import transactions from "./transactions.json";
