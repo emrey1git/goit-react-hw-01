@@ -1,7 +1,135 @@
-.App {
-  min-height: 100vh;
+/* Genel düzen */
+.app-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 20px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+button:focus {
+  outline: none;
+}
+
+/* İçerik alanı */
+.content {
+  width: 100%;
+  max-width: 800px;
   display: flex;
   justify-content: center;
   align-items: center;
-  background: #ebf2f7;
+  flex-direction: column;
+}
+
+.profile, .friend-list, .transaction-history {
+  width: 100%;
+}
+
+/* Profile */
+.profile__description {
+  text-align: center;
+}
+
+.profile__avatar {
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  margin-bottom: 20px;
+}
+
+.profile__name, .profile__tag, .profile__location {
+  font-size: 18px;
+  margin: 5px 0;
+}
+
+.profile__stats {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  padding: 0;
+}
+
+.profile__stats-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.label {
+  font-weight: bold;
+}
+
+.quantity {
+  font-size: 20px;
+}
+
+/* Friend List */
+.friend-list ul {
+  list-style: none;
+  padding: 0;
+}
+
+.friend-list li {
+  margin-bottom: 10px;
+}
+
+.friend-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.friend-item img {
+  border-radius: 50%;
+  width: 48px;
+  height: 48px;
+}
+
+.status {
+  font-size: 16px;
+}
+
+.online {
+  color: green;
+}
+
+.offline {
+  color: red;
+}
+
+/* Transaction History */
+.transaction-history table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: center;
+}
+
+.transaction-history th, .transaction-history td {
+  padding: 10px;
+  border: 1px solid #ddd;
+}
+
+.transaction-history th {
+  background-color: #f2f2f2;
 }
