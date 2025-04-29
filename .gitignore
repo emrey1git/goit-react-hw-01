@@ -22,3 +22,6 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+# force case-sensitive paths (for Windows users)
+core.ignorecase=false
+
